@@ -1,0 +1,168 @@
+body {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(
+    45deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(238, 238, 238, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+.App {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.heading {
+  display: inline-block;
+  color: #99cc66;
+  font-weight: bold;
+  z-index: 1;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 0px #6cb326;
+}
+
+.stock {
+  color: white;
+  font-weight: 500;
+  background-color: #6cb326;
+  padding: 5px 10px;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stock:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.stock-wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  max-width: 500px;
+}
+
+.stock:hover {
+  padding-right: 25px;
+}
+
+.stock:hover .close {
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  display: block;
+  opacity: 0;
+  font-size: 14px;
+  transition: all 0.15s ease-in-out;
+  line-height: 0;
+  color: white;
+  font-weight: 300;
+}
+
+.close svg {
+  width: 12px;
+  height: 12px;
+}
+
+.form-control {
+  border: 0;
+  border-radius: 0;
+  background-color: white;
+  height: 40px;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.form-group {
+  margin: 0 auto;
+  max-width: 500px;
+  box-shadow: 0 0 0 #6cb326 !important;
+  transition: box-shadow 0.15s ease-in-out;
+  height: 40px;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.form-group:hover {
+  box-shadow: 10px 10px 0 #6cb326 !important;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.form-button {
+  color: white;
+  background-color: #264cb3;
+  border: 0;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 0;
+}
+
+.form-button:hover {
+  color: white;
+  background-color: #1d3883;
+}
+
+.notice {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  max-width: 600px;
+}
+
+.notice-large {
+  font-size: 30px;
+  margin: 60px auto;
+}
+
+.graph-title {
+  text-transform: uppercase;
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto 10px auto;
+  padding-left: 60px;
+}
+
+.recharts-responsive-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recharts-default-legend {
+  margin-top: 20px !important;
+}
+
+.swal2-modal {
+  border-radius: 0 !important;
+}
+
+.swal2-popup {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+}
+
+.swal2-title {
+  margin-bottom: 20px !important;
+}
+
+.swal2-content {
+  font-size: 16px !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 !important;
+  /* margin-bottom: 10px !important; */
+}
+.swal2-confirm {
+  background-color: rgb(89, 0, 255) !important;
+  border-radius: 0 !important;
+  width: 150px;
+  margin: 0 auto;
+  font-size: 14px !important;
+}
